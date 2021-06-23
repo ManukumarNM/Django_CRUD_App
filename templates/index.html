@@ -1,0 +1,15 @@
+{% extends 'basic.html' %}  
+
+{% block content %}
+<body>
+    <h3>Enter Student Details</h3> 
+<form action="/" method="POST">
+{% csrf_token %}
+    <table class="center">
+      {{form.as_table}}
+    </table>
+   <button type="submit">Submit</button>
+</form>
+</body>
+{% endblock %}
+

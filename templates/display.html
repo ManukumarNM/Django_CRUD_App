@@ -1,0 +1,38 @@
+{% extends 'basic.html' %}
+
+{% block content %}
+<body>
+    <table class="display">
+        <thead class="thead-dark">  
+         <tr>
+            <th>Student_Name</th>
+            <th>Student_Email</th>
+            <th>Student_Address</th>
+            <th>Student_Course</th>
+            <th>Student_Semester</th>
+            <th>Student_Mobile</th>
+            <th>Actions</b>
+         </tr>
+    </thead>
+    <tbody>
+    {% for student in students %}
+    <tr>
+        <td>{{ student.student_name }}</td>
+        <td>{{ student.student_email }}</td>
+        <td>{{ student.student_address }}</td>
+        <td>{{ student.student_course }}</td>
+        <td>{{ student.student_semester }}</td>
+        <td>{{ student.student_mobile }}</td>
+        <td>
+        <a href="edit/{{ student.id }}"><span class="glyphicon glyphicon-pencil" >Edit</span></a>  
+        <a href="delete/{{ student.id }}">Delete</a>  
+        </td>
+    </tr>
+    {% endfor %}
+</tbody>
+    </table>
+    
+<center><a href="/" class="btn btn-primary">Add New Record</a></center>  
+</body>
+
+{% endblock %}

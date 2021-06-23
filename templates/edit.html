@@ -1,0 +1,40 @@
+{% extends 'basic.html' %}
+
+{% block content %}
+
+<body>  
+    <form method="POST" class="post-form" action="/update/{{ students.id }}">  
+      {% csrf_token %}  
+        
+        <h3>Update Student Details</h3>  
+        <label>Student Id
+            <input type="text" name = "student_id" required maxlength="20" value="{{ students.id }}"/>      
+        </label> 
+ 
+        <label>Student Name 
+            <input type="text" name="student_name"  required maxlength="100" value="{{ students.student_name }}" />  
+        </label>   
+        
+        <label>Student Email
+            <input type="email" name="student_email" required maxlength="254" value="{{ students.student_email }}" />  
+        </label> 
+     
+        <label>Student Address   
+            <input type="textarea" name="student_address" required maxlength="1000" value="{{ students.student_address }}" />  
+        </label>
+           
+        <label>Student Course  
+            <input type="text" name="student_course" value="{{ students.student_course }}" />  
+        </label>
+
+        <label class="col-sm-2 col-form-label">Student Semester  
+            <input type="text" name="student_semester" required value="{{ students.student_semester }}" />  
+          </label>
+
+        <label>Student Contact  
+            <input type="text"  name="student_mobile" required maxlength="10" value="{{ students.student_mobile }}" />    
+        </label>
+        <button type="submit" >Update</button>    
+    </form>  
+</body>  
+{% endblock %}   

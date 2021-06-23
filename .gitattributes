@@ -1,6 +1,5 @@
 *.js linguist-detectable=false
 *.py linguist-detectable=true
 *.html linguist-detectable=true
-*.css linguist-detectable=true
-*.postgresql linguist-detectable=true
-*.django linguist-detectable=true
+*.pgSQL linguist-detectable=true
+*.dj linguist-detectable=true

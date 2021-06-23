@@ -7,6 +7,7 @@ DJANGO - CREATE READ UPDATE DELETE App: Django CRUD application to perfrom basic
 with front-end design using HTML and CSS.
 
 # Images
+![Top_](https://user-images.githubusercontent.com/24228300/123060343-449f4100-d428-11eb-8225-dbc38e831709.PNG)
 
 # Getting Started
 •	Download or Clone the Repository on your Local Machine

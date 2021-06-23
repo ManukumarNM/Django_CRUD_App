@@ -26,6 +26,7 @@ with front-end design using HTML and CSS.
 
 
 # Built With
-Django, POSTGRESQL
+Django, POSTGRESQL, HTML, CSS
+IDE'S - VScode
 
 Author : Manukumar N M 

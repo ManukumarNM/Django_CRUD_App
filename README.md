@@ -3,8 +3,13 @@
 # Project Title:
  Django_CRUD_App
  
-DJANGO - CREATE READ UPDATE DELETE App: Django CRUD application to perfrom basic SQL operations like create, read, update and delete a STUDENT information using POSTGRESQL database
-with front-end design using HTML and CSS.
+DJANGO - CREATE READ UPDATE DELETE App: Django CRUD application to perfrom basic SQL operations like create, read, update and delete a STUDENT information using POSTGRESQL database with front-end design using HTML and CSS.
+
+# Operations/Functions
+CREATE Student Information
+UPDATE/EDIT Student Information
+RETRIEVE/DISPLAY Student Information
+DELETE Student Information
 
 # Images
 ![Student_Details_01](https://user-images.githubusercontent.com/24228300/123062128-dd828c00-d429-11eb-9907-6e668db63ad1.PNG)

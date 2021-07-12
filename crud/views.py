@@ -29,9 +29,7 @@ def update(request, id):
     students = Students.objects.get(id=id)
     # model = Students
     form = StudentsForm(request.POST, instance=students)
-    print("Hellooooooooooo")
     if form.is_valid():
-        print("HIIIIIIIIIIIIIIIIIIIII")
         form.save()
         return redirect("display")
     return render(request,'edit.html',{'students': students})
